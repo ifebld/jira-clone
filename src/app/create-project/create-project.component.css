@@ -1,0 +1,24 @@
+.container{
+    border: 2px solid red;
+    width: 1000px;
+    height: 75%;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.details{
+    width: 475px;
+    height: 75%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted red;
+}
+
+.details span{
+    width: 2.5px;
+    height: 1px;
+    padding: 2.8px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 50%;
+}

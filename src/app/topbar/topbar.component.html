@@ -1,0 +1,151 @@
+<body>
+    <!-- the menu starts here -->
+    <div class="navbar">
+  
+      <label for="togglericon" class="toggler" checked></label>
+      <input type="checkbox" id="togglericon" class="toggler" />
+  
+      
+  
+      <div class="nav">
+
+        <div class="brand">
+            <span class="brand-icon">⚛</span>
+            <span class="brand-name">ClonedJira</span>
+          </div>
+        
+          <!-- <div class="dropdown">
+            <label for="toggle-1">Your Work</label>
+            <input type="checkbox" id="toggle-1" />
+            <ul>
+              <li><a href="#">Go to Work Page</a></li>
+            </ul>
+          </div> -->
+
+          <div class="dropdown">
+            <button class="dropbtn">Your Work</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Go to your work Page</a>
+            </div>
+          </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Project</button>
+          <div class="dropdown-content">
+          <a class="button"
+            routerLink="/view-projects"
+            routerLinkActive="activebutton"
+            ariaCurrentWhenActive="page">View all Project</a>
+
+          <a class="button"
+            routerLink="/projects"
+            routerLinkActive="activebutton"
+            ariaCurrentWhenActive="page">Create Project</a>
+            </div>
+        </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Filters</button>
+            <div class="dropdown-content">
+            <a href="#">View all filters</a>
+            <a href="#">Create filters</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">DashBoard</button>
+            <div class="dropdown-content">
+            <a class="button"
+              routerLink="/dashboard-view"
+            routerLinkActive="activebutton"
+            ariaCurrentWhenActive="page">View all DashBoard</a>
+
+            <a (click)="openDialog3()">Create DashBoard</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a class="button"
+                    routerLink="/invite-teammate"
+                    routerLinkActive="activebutton"
+                    ariaCurrentWhenActive="page">Invite Teammate</a>
+
+                <a  (click)="openDialog()">Create Team</a>
+
+                <a href="#">Search Peolple and Teams</a>
+              </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn">Apps</button>
+              <div class="dropdown-content">
+                <a >Explore More Apps</a>
+
+                <a>Manage your Apps</a>
+
+                <a>View Apps request</a>
+              </div>
+          </div>
+        
+        <!-- <div class="dropdown">
+          <label for="toggle-2">Project</label>
+          <input type="checkbox" id="toggle-2" />
+          <ul>
+            <li><a href="#" >View all Project</a></li>
+            <li><a class="button"
+              routerLink="/projects"
+              routerLinkActive="activebutton"
+              ariaCurrentWhenActive="page">Create Project</a></li>
+            
+          </ul>
+        </div> -->
+
+        <!-- <div class="dropdown">
+            <label for="toggle-3">Filters</label>
+            <input type="checkbox" id="toggle-3" />
+            <ul>
+              <li><a href="#">View all filters</a></li>
+              <li><a href="#">Create filters</a></li>
+            </ul>
+          </div>
+  
+        <div class="dropdown">
+          <label for="toggle-4">DashBoard</label>
+          <input type="checkbox" id="toggle-4" />
+          <ul>
+            <li><a href="#">View all Daashboard</a></li>
+            <li><a href="#">Create Dashboard</a></li>
+          </ul>
+        </div>
+
+
+       <div class="dropdown">
+          <label for="toggle-5">People</label>
+          <input type="checkbox" id="toggle-5" />
+          <ul>
+            <li><a href="#">Invite a Teammate</a></li>
+            <li><a href="#">Create a Team</a></li>
+          </ul>
+        </div> -->
+        <button type="button" 
+        
+        class="button"
+        (click)="openDialog2()"
+        class="btn btn-primary ">Create</button>
+        
+      </div>
+      <div class="search">
+        <form class="d-flex col-sm-8 input-sm">
+            <input class="form-control me-2  " type="search" placeholder="Search" aria-label="Search">
+          </form>
+      </div>
+      
+    </div>
+    <!-- the menu ends here --> 
+  </body>
+
+
+  
