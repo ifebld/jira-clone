@@ -1,9 +1,14 @@
 .container{
-    border: 2px solid red;
     width: 1000px;
     height: 75%;
     margin-top: 50px;
     margin-left: 200px;
+    
+}
+
+.subcontainer{
+    display: flex;
+    justify-content: space-between;
 }
 
 .details{
@@ -11,7 +16,7 @@
     height: 75%;
     margin: 10px;
     padding: 20px;
-    border: 1px dotted red;
+   
 }
 
 .details span{
@@ -21,4 +26,104 @@
     background-color: blue;
     color: #fff;
     border-radius: 50%;
+}
+
+.category{
+    margin-left: 30px;
+    width: 475px;
+    height: 75%;
+    padding: 20px;
+    float: right;
+}
+
+.project-type1{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-type1 h4{
+    margin-top: 5px;
+    color: #6B778C;
+    font-weight: 500;
+}
+
+.btn{
+    align-items: baseline;
+    border-width: 0px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: inherit;
+    font-style: normal;
+    font-family: inherit;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background: none;
+    cursor: pointer;
+    height: 2.28571em;
+    line-height: 2.38571em;
+    padding: 0px 10px;
+    vertical-align: middle;
+    width: auto;
+    justify-content: center;
+    color: #42525E;
+}
+
+.project-type2{
+    display: flex;
+    overflow: hidden;
+    margin-top: 8px;
+    min-height: 96px;
+    background-color: #fff;
+    box-shadow:var(--ds-shadow-raised,0px 1px 1px rgba(9,30,66,0.13),0px 0px 1px rgba(9,30,66,0.13)) ;
+}
+
+.project-type3{
+    width: 25%;
+    background-color: #EAE6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.project-img{
+    width: 55px;
+    height: 45px;
+    background-image: url("https://jira-frontend-static.prod.public.atl-paas.net/assets/team-managed.b321a813474d0717b07e7f446ae3bf2c.8.svg");
+    background-size: cover;
+}
+
+.project-img2{
+    width: 55px;
+    height: 45px;
+    background-image: url("https://jira-frontend-static.prod.public.atl-paas.net/assets/team-managed.b321a813474d0717b07e7f446ae3bf2c.8.svg");
+    background-size: cover;
+}
+
+.projectDetails{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px 24px;
+}
+
+.projectText{
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #5243AA;
+}
+
+.projectText2{
+    color: #6B778C;
+    margin-top: 4px;
+    text-align: left;
+    font-size: 11px;
 }

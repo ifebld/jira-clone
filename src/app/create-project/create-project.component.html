@@ -1,16 +1,79 @@
-<p>create-project works!</p>
+
 
 <div class="container">
+    <div class="subcontainer">
     <div class="details">
         <h2>Add project</h2>
         <p>You can change these details anytime in your project settings.</p>
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Try a team name, project goal, milestone...">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Try a team name, project goal, milestone..." [(ngModel)] = "projectName">
             <br>
             <p>Access: Anyone with access to project can access and administer this project. Upgrade your plan to customize project permissions.</p>
           </div>
         <h5>Key<span>i</span></h5>
+        <br>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" >
+            <label for="floatingInput"></label>
+        </div><br>
+        <button type="button" (click)="submit()" class="btn btn-primary">Create Project</button>
     </div>
-    <div class="category"></div>
+
+    <div class="category">
+        <h4>Project Type</h4>
+        <br>
+
+        <div class="project-type">
+            <div class="project-type1">
+                <h4>Template</h4>
+                <button type="button"  class="btn">
+                    <span class="btn-span">Change template</span> </button>
+            </div>
+
+            <div class="project-type2">
+                <div class="project-type3">
+                    <div class="project-img"></div>
+                </div>
+
+                <div class="projectDetails">
+                    <div class="projectText">Scrum</div>
+                    <p class="projectText2">Sprint toward your project goals with a board, backlog, and roadmap.</p>
+                </div>
+            </div><br>
+
+            <div class="project-type1">
+                <h4>Type</h4>
+                <button type="button"  class="btn">
+                    <span class="btn-span">Change type</span> </button>
+            </div>
+
+            <div class="project-type2">
+                <div class="project-type3">
+                    <div class="project-img2"></div>
+                </div>
+
+                <div class="projectDetails">
+                    <div class="projectText">Team Managed</div>
+                    <p class="projectText2">Control your own working processes and practices in self-contained spaces.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fitem" id="inlineRadio1" value="Kabran" [(ngModel)] ="type" >
+            <label class="form-check-label" for="inlineRadio1">Kabran</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="utnesil" id="inlineRadio2" value="Scrum" [(ngModel)] ="type" >
+            <label class="form-check-label" for="inlineRadio2">Scrum</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="utnesil" id="inlineRadio2" value="Others" [(ngModel)] ="type" >
+            <label class="form-check-label" for="inlineRadio2">Others</label>
+        </div>
+    </div>
+</div>
+    
 </div>

@@ -3,6 +3,8 @@ import { InviteTeammateComponent } from '../invite-teammate/invite-teammate.comp
 import { MatDialog } from '@angular/material/dialog';
 import { CreateTaskComponent } from '../create-task/create-task.component';
 import { CreateDashboardComponent } from '../create-dashboard/create-dashboard.component';
+import { CreateTeamComponent } from '../create-team/create-team.component';
+
 
 @Component({
   selector: 'app-topbar',
@@ -17,16 +19,28 @@ export class TopbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog(){
-    this.dialogRef.open(InviteTeammateComponent)
+  openInviteTeamDialog(){
+    this.dialogRef.open(InviteTeammateComponent, {
+      backdropClass: 'backdropBackground'
+    })
+  }
+
+  openCreateTeamDialog(){
+    this.dialogRef.open(CreateTeamComponent, {
+      backdropClass: 'backdropBackground'
+    })
   }
 
   openDialog2(){
-    this.dialogRef.open(CreateTaskComponent)
+    this.dialogRef.open(CreateTaskComponent, {
+      backdropClass: 'backdropBackground'
+    })
   }
 
   openDialog3(){
-    this.dialogRef.open(CreateDashboardComponent)
+    this.dialogRef.open(CreateDashboardComponent, {
+      backdropClass: 'backdropBackground'
+    })
   }
 
 }

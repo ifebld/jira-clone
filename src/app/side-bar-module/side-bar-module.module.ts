@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SideBarModuleRoutingModule } from './side-bar-module-routing.module';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   ],
   imports: [
     CommonModule,
-    SideBarModuleRoutingModule
+    SideBarModuleRoutingModule,
+    FormsModule
   ]
 })
 export class SideBarModuleModule { }

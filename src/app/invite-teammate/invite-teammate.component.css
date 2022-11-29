@@ -1,6 +1,41 @@
+label{
+    font-size: 12px;
+    font-weight: 300;
+    color: #888;
+}
+
+.form-container{
+    height: 250px;
+    width: 300px;
+    margin-top: 10px;
+}
 .container{
+    width: 300px;
     display: flex;
-    justify-content: center;
-    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
+}
+
+.btn{
+    border: 0.5px solid rgb(221, 218, 218);
+}
+
+.microsoft{
+    width: 70px;
+    height: 30px;
+}
+
+.slack{
+    width: 70px;
+    height: 30px;
+}
+
+.google{
+    width: 70px;
+    height: 30px;
+}
+
+.ctrbtn{
+    float: right;
 }

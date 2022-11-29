@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7l7vjq');
+  src:  url('fonts/icomoon.eot?7l7vjq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7l7vjq') format('truetype'),
+    url('fonts/icomoon.woff?7l7vjq') format('woff'),
+    url('fonts/icomoon.svg?7l7vjq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1534129544 .path1:before {
+  content: "\e900";
+  color: rgb(251, 188, 5);
+}
+.icon-1534129544 .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(234, 67, 53);
+}
+.icon-1534129544 .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(52, 168, 83);
+}
+.icon-1534129544 .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(66, 133, 244);
+}
+.icon-microsoft .path1:before {
+  content: "\e904";
+  color: rgb(112, 109, 110);
+}
+.icon-microsoft .path2:before {
+  content: "\e905";
+  margin-left: -4.681640625em;
+  color: rgb(241, 81, 27);
+}
+.icon-microsoft .path3:before {
+  content: "\e906";
+  margin-left: -4.681640625em;
+  color: rgb(128, 204, 40);
+}
+.icon-microsoft .path4:before {
+  content: "\e907";
+  margin-left: -4.681640625em;
+  color: rgb(0, 173, 239);
+}
+.icon-microsoft .path5:before {
+  content: "\e908";
+  margin-left: -4.681640625em;
+  color: rgb(251, 188, 9);
+}
+.icon-slack-new-logo .path1:before {
+  content: "\e909";
+  color: rgb(54, 197, 240);
+}
+.icon-slack-new-logo .path2:before {
+  content: "\e90a";
+  margin-left: -0.998046875em;
+  color: rgb(46, 182, 125);
+}
+.icon-slack-new-logo .path3:before {
+  content: "\e90b";
+  margin-left: -0.998046875em;
+  color: rgb(236, 178, 46);
+}
+.icon-slack-new-logo .path4:before {
+  content: "\e90c";
+  margin-left: -0.998046875em;
+  color: rgb(224, 30, 90);
+}

@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    padding: 24px 24px 22px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formBody{
+    width: 800px;
+    height: 350px;
+    display: flex;
+}
+
+.formBody .dataimg{
+    width: 350px;
+    height: 320px;
+    margin: 20px;
+}
+
+.formbody2{
+    width: 350px;
+    height: 320px;
+    margin: 20px;
+}
+

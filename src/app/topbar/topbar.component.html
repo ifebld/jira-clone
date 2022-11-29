@@ -68,12 +68,9 @@
           <div class="dropdown">
             <button class="dropbtn">People</button>
               <div class="dropdown-content">
-                <a class="button"
-                    routerLink="/invite-teammate"
-                    routerLinkActive="activebutton"
-                    ariaCurrentWhenActive="page">Invite Teammate</a>
+                <a (click)="openInviteTeamDialog()">Invite Teammate</a>
 
-                <a  (click)="openDialog()">Create Team</a>
+                <a  (click)="openCreateTeamDialog()">Create Team</a>
 
                 <a href="#">Search Peolple and Teams</a>
               </div>
@@ -89,49 +86,8 @@
                 <a>View Apps request</a>
               </div>
           </div>
-        
-        <!-- <div class="dropdown">
-          <label for="toggle-2">Project</label>
-          <input type="checkbox" id="toggle-2" />
-          <ul>
-            <li><a href="#" >View all Project</a></li>
-            <li><a class="button"
-              routerLink="/projects"
-              routerLinkActive="activebutton"
-              ariaCurrentWhenActive="page">Create Project</a></li>
-            
-          </ul>
-        </div> -->
-
-        <!-- <div class="dropdown">
-            <label for="toggle-3">Filters</label>
-            <input type="checkbox" id="toggle-3" />
-            <ul>
-              <li><a href="#">View all filters</a></li>
-              <li><a href="#">Create filters</a></li>
-            </ul>
-          </div>
-  
-        <div class="dropdown">
-          <label for="toggle-4">DashBoard</label>
-          <input type="checkbox" id="toggle-4" />
-          <ul>
-            <li><a href="#">View all Daashboard</a></li>
-            <li><a href="#">Create Dashboard</a></li>
-          </ul>
-        </div>
-
-
-       <div class="dropdown">
-          <label for="toggle-5">People</label>
-          <input type="checkbox" id="toggle-5" />
-          <ul>
-            <li><a href="#">Invite a Teammate</a></li>
-            <li><a href="#">Create a Team</a></li>
-          </ul>
-        </div> -->
+ 
         <button type="button" 
-        
         class="button"
         (click)="openDialog2()"
         class="btn btn-primary ">Create</button>
@@ -144,7 +100,7 @@
       </div>
       
     </div>
-    <!-- the menu ends here --> 
+   
   </body>
 
 

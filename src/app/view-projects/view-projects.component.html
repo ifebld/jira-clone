@@ -1,6 +1,6 @@
 <div class="top">
     <h4>Projects</h4>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary" routerLink="/create-project">Create Project</button>
 </div>
 
 <div class="drp-dwn-Container">
@@ -13,23 +13,21 @@
     <div class="dropdown">
         <button class="dropbtn">All Jira Products</button>
             <div class="dropdown-content">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
-                    </label>
-                  </div>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Option 1</mat-radio-button>
+                
+              </mat-radio-group>
+              <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">Option 1</mat-radio-button>
+                
+              </mat-radio-group>
+                  
             </div>
     </div>
 </div>
 
-<table class="table">
+<div >
+  <table class="table" >
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -40,23 +38,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
+      <tr *ngFor="let project of projects" >
+        <th scope="row">{{project.id}}</th>
+        <td>{{project.projectName}}</td>
+        <td>{{project.type}}</td>
+        <td><div class="col-md-5">
+          <div>
+          <button type="button" class="btn btn-primary btn-sm" (click)="showEditDialog(user)">Edit</button>
+          </div> he
+          <div>
+          <button type="button" class="btn btn-danger btn-sm" (click)="letUser(user)">Delete </button>
+          </div>
+      </div></td>
       </tr>
     </tbody>
   </table>
+</div>
+
 

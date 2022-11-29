@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ManagementService } from '../management.service';
 
 @Component({
   selector: 'app-view-projects',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public managementService : ManagementService) { }
 
   ngOnInit(): void {
   }
-
+  projects : Array<any> = [];
+  project = {};
 }

@@ -1,15 +1,29 @@
-<div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Names or Emails</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<div class="form-container">
+  <div class="mb-3 mt-3">
+    <label for="text" class="form-label h6">Names or Emails:</label>
+    <input type="text" class="form-control" name="name" id="name" placeholder="e.g. Alex, Alex@test.com" name="Username" [(ngModel)] = "username">
   </div>
-<div class="container">
+  
+  <label for="text" class="form-label h6">or add from:</label>
+  <div class="container">
     <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Google</button>
-      </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Slack</button>
-      </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Microsoft</button>
-      </div>
+        <button type="submit" class="btn btn-light mb-3">
+          <span class="img">
+            <img src="../../assets/image/google-2015.svg" class="google">
+          </span></button>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-light mb-3"><img src="../../assets/image/slack-2.svg" class="slack"></button>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-light mb-3"><img src ="../../assets/image/microsoft.svg" class="microsoft"></button>
+    </div>
+  </div>
+
+  <br>
+  <div class="ctrbtn">
+    <button type="button" (click)="submit()" class="btn btn-light">Cancel</button>
+    <button type="button" (click)="submit()" class="btn btn-primary">Add</button>
+  </div>
+
 </div>

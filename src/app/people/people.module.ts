@@ -5,6 +5,8 @@ import { PeopleRoutingModule } from './people-routing.module';
 import { CreateTeamComponent } from '../create-team/create-team.component';
 import { InviteTeammateComponent } from '../invite-teammate/invite-teammate.component';
 import { MatDialogModule } from  '@angular/material/dialog'
+import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { MatDialogModule } from  '@angular/material/dialog'
   imports: [
     CommonModule,
     PeopleRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    FontAwesomeModule
   ]
 })
 export class PeopleModule { }

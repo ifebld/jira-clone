@@ -12,11 +12,6 @@ import { CreateProjectComponent } from './create-project/create-project.componen
 const routes: Routes = [
    {path: '', component: SidebarComponent},
    { path: 'projects', component: ProjectsComponent},
-   {
-    path: 'create-project',
-    loadChildren: () =>
-      import(`./project-module/project-module.module`).then((m) => m.ProjectModuleModule),
-  },
    {path: 'view-projects', component: ViewProjectsComponent },
    {path: 'invite-teammate', component: InviteTeammateComponent},
    {path: 'dashboard-view', component: DashboardViewComponent}

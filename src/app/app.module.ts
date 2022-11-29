@@ -11,6 +11,8 @@ import { ProjectModuleModule } from './project-module/project-module.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskModuleModule } from './task-module/task-module.module';
 import { PeopleModule } from './people/people.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 
@@ -20,7 +22,7 @@ import { PeopleModule } from './people/people.module';
     AppComponent,
     FiltersComponent,
     TopbarComponent,
-    SidebarComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,9 @@ import { PeopleModule } from './people/people.module';
     ProjectModuleModule,
     BrowserAnimationsModule,
     TaskModuleModule,
-    PeopleModule
+    FontAwesomeModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
